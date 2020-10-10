@@ -1,0 +1,21 @@
+command = input('>')
+
+while command == 'help':
+    print ('''
+    start - to start the car
+    stop - to stop the car
+    quit - to exit
+    ''')
+    next_command = input('>')
+    if next_command == 'start':
+        print('The car has started.')
+    elif next_command == 'stop':
+        print('Car stopped.')
+    elif next_command == 'quit':
+        break
+    else:
+        print("I don't understand that.")
+    break
+
+else:
+    print("I don't understand that.")
