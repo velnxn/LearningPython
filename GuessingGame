@@ -1,0 +1,12 @@
+secret_number = 9
+guess_count = 1
+
+while guess_count <= 3:
+    guess = int(input ('Guess: '))
+    if guess != 9:
+        if guess_count == 3:
+            print('You failed!')
+        guess_count += 1
+    elif guess == 9:
+        print("You win!")
+        guess_count = 4
